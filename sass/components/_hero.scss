@@ -1,0 +1,66 @@
+.hero {
+    min-height: 600px;
+    max-width: 1600px;
+
+    background-image: linear-gradient(to right,
+            $heroLinearGradientColor,
+            $heroLinearGradientColor),
+        url(../images/hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $heroBackgroundColor;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+.hero-container {
+    @extend %container;
+}
+
+.hero__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 696px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $whiteTextColor;
+}
+
+.hero-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    min-width: 216px;
+    height: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    color: $whiteTextColor;
+    background-color: $accentColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border: none;
+    transition: background-color 250ms $timingFunction;
+
+    &:hover,
+    &:focus {
+        color: $whiteTextColor;
+        background-color: $buttonColor;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}

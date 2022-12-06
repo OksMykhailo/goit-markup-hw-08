@@ -1,0 +1,35 @@
+.contacts-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    &__item {
+        margin-right: 50px;
+    }
+    
+    &__item:last-child {
+        margin-right: 0px;
+
+    }
+
+    &__icon {
+        display: inline-block;
+            
+        margin-right: 10px;
+        padding: 0px;
+        stroke: currentColor;
+        fill: currentColor;
+    }
+}
+
+.contacts-list__link {
+    @extend %header-link;
+    display: flex;
+    align-items: center;
+    color: $textColor;
+
+    
+
+}
+
+

@@ -1,0 +1,59 @@
+.footer-join {
+    margin-top: 12px;
+
+    &__subscription {
+        width: 570px;
+        display: flex;
+        gap: 12px;
+        justify-content: space-between;
+    }
+
+    &__input {
+        flex: 1 1 auto;
+        padding: 15px 16px;
+        background-color: transparent;
+        color: $whiteTextColor;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+    }
+}
+
+.footer-join__button {
+    width: 200px;
+    height: 50px;
+    color: $whiteTextColor;
+    background-color: $buttonColor;
+    font-family: inherit;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    transition: background-color 250ms $timingFunction;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        width: 24px;
+         height: 24px;
+        margin-left: 10px;
+        background-image: url(../images/icon-send.svg);
+        background-size: contain;
+    }
+
+    &:hover,
+    &:focus {
+        color: $whiteTextColor;
+        background-color: $accentColor;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}

@@ -1,0 +1,58 @@
+.advances {
+    @extend %section;
+
+    &__caption {
+        margin-top: 0;
+        margin-bottom: 10px;
+        
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        color: $titleColor;
+    }
+
+    &__text {
+       margin-bottom: 0;
+
+       font-size: 14px;
+       line-height: 1.7;
+       color: $textColor;
+
+    }
+}
+
+.advances__container{
+    @extend %container;
+}
+
+.advances-list {
+    display: flex;
+    gap: 30px;
+
+    &__item {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+}
+
+.advances__icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.advances__icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+        
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+
+
+}

@@ -1,19 +1,41 @@
 .footer-page {
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 252px;
+    text-align: center;
     background-color: $darkBackgroundColor;
+    
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+        }
 }
 
 .footer__container{
     @extend %container;
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+
+    @media screen and (min-width: 768px) {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            gap: 93px;
+            flex-wrap: nowrap;
+            align-items: baseline;
+        }
+}
+
+.footer__address {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+        }
 }
 
 .footer__logo{
-    display: block;
+    display:inline-block;
     margin-bottom: 20px;
     color: $whiteTextColor;
 }
@@ -47,10 +69,14 @@
 }
 
 .footer-social{
-    margin-right: 93px;
-    margin-left: 70px;
-    width: 206px;
-    height: 80px;
+
+    @media screen and (min-width: 768px) {
+            margin-top: 5px;
+        }
+    //margin-right: 93px;
+    //margin-left: 70px;
+    //width: 206px;
+    //height: 80px;
 
     &__text {
     margin-bottom: 20px;

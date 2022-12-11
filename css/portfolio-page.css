@@ -462,8 +462,8 @@ img {
     background-color: #fff;
     height: 796px;
     padding: 48px 40px;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -471,8 +471,8 @@ img {
     z-index: 999;
   }
   .page-header__mobile-menu.is-open {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

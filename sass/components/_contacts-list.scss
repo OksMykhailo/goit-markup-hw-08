@@ -5,7 +5,15 @@
     margin-left: auto;
 
     &__item {
+        
         margin-right: 50px;
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            margin-bottom: 10px;
+        
+            &:last-child {
+                margin-bottom: 0;
+                }
+            }
     }
     
     &__item:last-child {
@@ -21,6 +29,12 @@
         stroke: currentColor;
         fill: currentColor;
     }
+
+        @media screen and (min-width:768px) and (max-width:1199px) {
+             flex-direction: column;
+             align-items: flex-start;
+             margin-left: 96px;
+        }
 }
 
 .contacts-list__link {
@@ -31,6 +45,12 @@
 
     
 
+}
+
+.contacts-list {
+    @media screen and (max-width:767px) {
+        display: none;
+    }
 }
 
 

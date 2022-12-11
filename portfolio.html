@@ -51,6 +51,83 @@
             >
           </li>
         </ul>
+        <!--Mobile Header-->
+      <button
+          type="button"
+          class="page-header__nav-btn "
+          aria-expanded="false"
+          aria-controls="mobile-menu-btn"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use
+              class="page-header__icon-cross"
+              href="./images/sprite.svg#icon-close"
+            ></use>
+            <use
+              class="page-header__icon-menu"
+              href="./images/sprite.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+        <div
+          class="page-header__mobile-menu "
+          id="mobile-menu-btn"
+          data-menu
+        >
+          <div class="page-header__mobile-nav">
+            <nav class="">
+              <ul class="page-header__mobile-nav-list list">
+               <li class="page-header__mobile-nav-item">
+                <a
+                  href="./index.html"
+                  class=" page-header__mobile-nav-link page-header__mobile-nav-link link">Студія</a>
+               </li>
+
+      <li class="page-header__mobile-nav-item">
+        <a href="./portfolio.html" class="link page-header__mobile-nav-link page-header__mobile-nav-link--current "
+          >Портфоліо</a
+        >
+      </li>
+
+      <li class="page-header__mobile-nav-item">
+        <a href="" class="link page-header__mobile-nav-link">Контакти</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+        <div class="page-header__mobile-contacts">
+          <ul class="list page-header__mobile-contacts-list">
+            <li class="page-header__mobile-contact-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="page-header__mobile-contact-link link"
+              >
+              
+                 
+                info@devstudio.com</a
+              >
+            </li>
+  
+            <li class="page-header__mobile-contact-item">
+              <a href="tel:380961111111" class="page-header__mobile-contact-link link">
+              
+  
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Instagram</a></li>
+            <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Twitter</a></li>
+            <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Facebook</a></li>
+            <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">LinkedIn</a></li>
+          </ul>
+        </div>
+        
+
+
+      </div>
       </div>
     </header>
     <main>
@@ -81,7 +158,7 @@
             <li class="projects__item">
               <a href="">
                 <div class="projects__thumb">
-                <img src="./images/portfolio1.jpg" width="370" alt="ноутбук" />
+                <img class="portfolio__img " src="./images/portfolio1.jpg" width="370" alt="ноутбук" />
                 <div class="projects__description">
                   <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -96,7 +173,7 @@
             <li class="projects__item">
               <a href="">
                 <div class="projects__thumb">
-                <img
+                <img class="portfolio__img "
                   src="./images/portfolio2.jpg"
                   width="370"
                   alt="нба-гравці"/>
@@ -114,7 +191,7 @@
             <li class="projects__item">
               <a href="">
                 <div class="projects__thumb">
-                <img src="./images/portfolio3.jpg" width="370" alt="риба" />
+                <img class="portfolio__img " src="./images/portfolio3.jpg" width="370" alt="риба" />
                 <div class="projects__description">
                     <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
@@ -129,7 +206,7 @@
             <li class="projects__item">
               <a href="">
                 <div class="projects__thumb">
-                <img
+                <img class="portfolio__img "
                   src="./images/portfolio4.jpg"
                   width="370"
                   alt="навушники"
@@ -148,7 +225,7 @@
             <li class="projects__item">
               <a href="">
                 <div class="projects__thumb">
-                <img src="./images/portfolio5.jpg" width="370" alt="коробки" />
+                <img class="portfolio__img " src="./images/portfolio5.jpg" width="370" alt="коробки" />
                 <div class="projects__description">
                     <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
@@ -163,7 +240,7 @@
             <li class="projects__item">
               <a href="">
                 <div class="projects__thumb">
-                <img src="./images/portfolio6.jpg" width="370" alt="монітор" />
+                <img class="portfolio__img " src="./images/portfolio6.jpg" width="370" alt="монітор" />
                 <div class="projects__description">
                     <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
@@ -178,7 +255,7 @@
             <li class="projects__item">
               <a href="">
                 <div class="projects__thumb">
-                <img src="./images/portfolio7.jpg" width="370" alt="книга" />
+                <img class="portfolio__img " src="./images/portfolio7.jpg" width="370" alt="книга" />
                 <div class="projects__description">
                     <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
@@ -193,7 +270,7 @@
             <li class="projects__item">
               <a href="">
                 <div class="projects__thumb">
-                <img src="./images/portfolio8.jpg" width="370" alt="лейба" />
+                <img class="portfolio__img " src="./images/portfolio8.jpg" width="370" alt="лейба" />
                 <div class="projects__description">
                     <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
@@ -208,7 +285,7 @@
             <li class="projects__item">
               <a href="">
                 <div class="projects__thumb">
-                <img
+                <img class="portfolio__img "
                   src="./images/portfolio9.jpg"
                   width="370"
                   alt="робота-за-ноутбуком"
@@ -290,5 +367,6 @@
         </div>
       </div>
     </footer>
+    <script src="./menu.js"></script>
   </body>
 </html>

@@ -732,11 +732,6 @@ img {
     display: flex;
   }
 }
-.projects__item {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
 @media screen and (min-width: 768px) {
   .projects__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -770,7 +765,6 @@ img {
 
 .portfolio__img {
   display: block;
-  width: 100%;
 }
 
 .projects__thumb {

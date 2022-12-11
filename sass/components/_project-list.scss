@@ -12,12 +12,13 @@
  &__item {
     @media screen and (min-width:768px) {
         flex-basis: calc((100% - 30px) / 2);
+        
     }
     
     @media screen and (min-width:1200px) {
         flex-basis: calc((100% - 60px) / 3);
     }
-    flex-grow: 1;
+   
  }
 
  &__description {
@@ -36,7 +37,7 @@
 
 .portfolio__img{
     display: block;
-    width: 100%;
+    
 }
 
 .projects__thumb {
@@ -74,6 +75,7 @@
     padding: 20px 24px;
     border: 1px solid $bordercolor;
     border-top: none;
+    
 
     &__label {
         margin-bottom: 0;
